@@ -1,24 +1,73 @@
-body{
+body {
   width: 75vw;
   margin: auto;
 }
 
-#piano{
-  height: 400px;
-  background: wheat;
+#controls {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.key{
+#piano {
+  height: 400px;
+  background: wheat;
+  position: relative;
+}
+
+.key {
   height: 400px;
   width: 14.2857142857%;
   float: left;
   border: 5px solid black;
   border-right: none;
-  background: white;
   text-align: center;
   padding-top: 300px;
 }
 
-#B{
+.white {
+  background: white;
+}
+
+.black {
+  background: black;
+  color: black;
+  height: 200px;
+  width: 10%;
+  position: absolute;
+  z-index: 1;
+  margin-left: -5%;
+  margin-top: -200px;
+}
+
+.key.active {
+  box-shadow: 0 0 10px #33d6a6;
+  transition: box-shadow 0.1s;
+}
+
+#C {
+  margin-left: 0;
+}
+
+#C# {
+  margin-left: 7%;
+}
+
+#D# {
+  margin-left: 21%;
+}
+
+#F# {
+  margin-left: 50%;
+}
+
+#G# {
+  margin-left: 64%;
+}
+
+#A# {
+  margin-left: 78%;
+}
+
+#B {
   border-right: 5px solid black;
 }
